@@ -24,12 +24,35 @@
 	<div class="ramki">
 	 </div><br>
 	 <div class="panorama">
-	     
-	 </div>
+		 </div>
+		
 	<SCRIPT>
-	    var dNow = new Date();
-        var sNow = dNow.getDate()+"." + dNow.getMonth()+"." + dNow.getFullYear();
-        document.write(sNow)
+   /* var name = prompt ('Как Вас зовут?');
+        alert('Ваше имя '+ name); */ //функция prompt
+        
+       /* var ofNameJs = prompt ('Какое официальное название JavaScript?');
+        if (ofNameJs == 'ECMAScript') {
+            alert ('Верно');
+        } else {
+            alert ('Не знаете? «ECMAScript»!');
+        } */ // применение if and else
+        
+        var whoIsIt = prompt ('Кто пришел?');
+        if (whoIsIt == 'Админ') {
+            var pass = prompt ('Пароль?');
+            if (pass == 'DartWeider') {
+                alert ('Hello');
+            } else if (pass == null) {
+                alert ('Вход отменен');
+            } else {
+                alert ('Пароль не верный');
+            }} else if (whoIsIt == null) {
+                alert ('Вход отменен');
+            } else {
+                alert('Я вас не знаю');
+        }
+        
 	</SCRIPT> 
+	
 </body>
 </html>
